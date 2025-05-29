@@ -93,6 +93,7 @@
   cursor: pointer;
   border-radius: 0;
   transition: background 0.2s, border-color 0.2s;
+   color:rgb(90, 56, 41);
 }
 
 .sizeButton:hover {
@@ -128,9 +129,10 @@
 .quantityBtn {
   padding: 0.4rem 1rem;
   font-size: 1rem;
-  background:rgb(90, 56, 41);
-  border: none;
+  background:transparent;
+  border: 1px solid rgb(90, 56, 41);
   cursor: pointer;
+  color: rgb(90, 56, 41);
 }
 
 .quantityDisplay {
