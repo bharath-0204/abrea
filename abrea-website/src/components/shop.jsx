@@ -10,7 +10,6 @@ function Collection() {
       className={styles.collectionContainer}
       style={{ backgroundImage: `url(${bgTexture})` }}
     >
-      <h1 className={styles.collectionTitle}>The Collection</h1>
       <div className={styles.itemsContainer}>
         <Link to="/product1" className={styles.item}>
           <img src={whisperingTide} alt="Whispering Tide Cape" />
