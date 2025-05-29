@@ -1,0 +1,82 @@
+/* Import DM Sans font in your HTML or React head */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+.shopContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 60px;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'DM Sans', sans-serif;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.textSection {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSection h1 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  letter-spacing: 0.1em;
+  color: #2d2d2d;
+}
+
+.textSection p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  max-width: 100%;
+  width: 80%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .shopContainer {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .textSection {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .textSection h1 {
+    font-size: 2.2rem;
+  }
+
+  .textSection p {
+    font-size: 0.95rem;
+  }
+
+  .imageSection {
+    margin-top: 20px;
+  }
+}

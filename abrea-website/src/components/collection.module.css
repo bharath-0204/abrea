@@ -1,0 +1,52 @@
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  font-family: 'Cormorant Garamond', serif;
+  color: #2e2e2e;
+  min-height: 100vh;
+  gap: 3rem;
+}
+
+.leftColumn {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.collageImage {
+  width: 100vh;
+  height: 100vh;            /* Slightly smaller to fit screen */
+  object-fit: contain;     /* Preserves proportions without cropping */
+  margin-top: -10rem;       /* Move image up slightly */
+  margin-left: 0rem;
+}
+
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.titleImage {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.aboutText {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 600px;
+}

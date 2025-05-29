@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+.collectionContainer {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.collectionTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px; /* Reduced gap between title and images */
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: -20px; /* Moves images slightly upward */
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+}
+
+.item img {
+  width: 320px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  margin-top: 12px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.item:hover .caption {
+  color: #000;
+  transform: translateY(-2px);
+}

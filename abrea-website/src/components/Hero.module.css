@@ -1,0 +1,58 @@
+/* Hero section */
+.hero {
+  background: url('../assets/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Overlay container for content */
+.overlay {
+  max-width: 90%;
+  padding: 0 1rem;
+}
+
+/* Title styling */
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Transparent button with white border */
+.button {
+  padding: 0.75rem 11rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background:transparent;
+  color: #000000;
+}
+.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

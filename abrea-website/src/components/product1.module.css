@@ -1,0 +1,162 @@
+/* File: src/components/product1.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  gap: 4rem;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+.imageSection {
+  margin-left: -25rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.detailsSection {
+  flex: 1;
+  padding-top: 1rem; /* Adjusted to move content up */
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.price {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.taxNote {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}
+
+.sizes {
+  margin-bottom: 1.5rem;
+}
+
+.sizeLabel {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.sizeOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  color:#333;
+}
+
+.sizeButton {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #999;
+  background: transparent;
+  font-family: 'Georgia', serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.sizeButton:hover {
+  border-color: #000;
+}
+
+.selected {
+  border: 2px solid #000;
+}
+
+.sizeChart {
+  margin-left: auto;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.quantitySection {
+  margin-bottom: 1.5rem;
+}
+
+.quantityLabel {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantityBtn {
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.quantityDisplay {
+  font-size: 1rem;
+  min-width: 30px;
+  text-align: center;
+}
+
+.addToCartBtn {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.addToCartBtn:hover {
+  background: #f0f0f0;
+}
+
+.helpLink {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  text-align: right;
+}

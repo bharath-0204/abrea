@@ -1,0 +1,170 @@
+.cartDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  pointer-events: auto;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cartPanel {
+  width: 400px;
+  max-width: 90%;
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Cormorant Garamond', serif;
+  color: #3a3a3a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cartContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 4px;
+}
+
+.cartHeaders {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.thumbnail {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemDetails p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.quantityControls button {
+  padding: 4px 10px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.removeBtn {
+  margin-top: 8px;
+  background: none;
+  border: 1px solid black;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+}
+
+.itemTotal {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.footer {
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+  text-align: right;
+}
+
+.taxNote {
+  font-size: 12px;
+  color: #555;
+  text-align: right;
+  margin-bottom: 12px;
+}
+
+.checkoutBtn {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cartOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+.cartDrawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 400px;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.cartDrawer.open {
+  right: 0;
+}
